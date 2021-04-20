@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWeb</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <h2 align="center">Register</h2>
+              <form action="{{ url_for('insert') }}" method="post">
+               <div class="form-group">
+                 <label for="fname">ชื่อ</label>
+                 <input type="text" class="form-control"  name="fname">
+               </div>
+               <div class="form-group">
+                 <label for="fname">นามสกุล</label>
+                 <input type="text" class="form-control"  name="lname">
+               </div>
+               <div class="form-group">
+                <label for="fname">อายุ</label>
+                <input type="text" class="form-control"  name="age">
+              </div>
+               <div class="form-group">
+                 <label for="fname">เบอร์โทรศัพท์</label>
+                 <input type="text" class="form-control"  name="phone">
+               </div>
+               <button type="submit" class="pull-right btn btn-danger"  style="width: 100%;" >Submit</button>
+               <a href='/' class="btn btn-primary" style="width: 100%;">Home</a>
+              </form>
+          </div>
+    </div>
+</body>
+</html>
